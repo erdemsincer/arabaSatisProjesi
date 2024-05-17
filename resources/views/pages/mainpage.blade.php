@@ -6,14 +6,14 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Arabam</title>
-    <link rel="icon" type="image/x-icon" href="{{asset("assets/car-solid.png")}}"/>
+    <link rel="icon" type="image/x-icon" href="{{asset("mainpage/assets/car-solid.png")}}"/>
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="{{asset("css/styles.css")}}" rel="stylesheet" />
+    <link href="{{asset("mainpage/css/styles.css")}}" rel="stylesheet" />
 
     <style>
         a{
@@ -47,7 +47,7 @@
                         </a>
 
                         <a
-                            href="{{ url('/dashboard') }}"
+                            href="{{route('profile')}}"
                             class="rounded-md px-3 py-2 ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                         >
                             Hesabım
@@ -90,7 +90,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+    <script src="{{asset("mainpage/js/scripts.js")}}"></script>
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <!-- * *                               SB Forms JS                               * *-->
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->

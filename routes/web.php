@@ -3,8 +3,8 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('mainpage.mainpage');
-});
+    return view('pages.mainpage');
+})->name('mainpage');
 
 Route::middleware([
     'auth:sanctum',
@@ -12,6 +12,6 @@ Route::middleware([
     'verified',
 ])->group(function () {
     Route::get('/dashboard', function () {
-        return view('dashboard');
+        return redirect()->route('mainpage');
     })->name('dashboard');
 });
