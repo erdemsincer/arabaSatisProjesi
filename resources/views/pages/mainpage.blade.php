@@ -6,7 +6,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Arabam</title>
-    <link rel="icon" type="image/x-icon" href="{{asset("mainpage/assets/car-solid.png")}}"/>
+    <link rel="icon" type="image/x-icon" href="{{asset("assets/car-solid.png")}}"/>
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
@@ -47,11 +47,19 @@
                         </a>
 
                         <a
-                            href="{{route('profile')}}"
+                            href="#"
                             class="rounded-md px-3 py-2 ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                         >
                             Hesabım
                         </a>
+
+                        <a
+                            href="#"
+                            class="rounded-md px-3 py-2 ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                        >
+                            Çıkış Yap
+                        </a>
+
                     @else
                         <a
                             href="{{ route('login') }}"
