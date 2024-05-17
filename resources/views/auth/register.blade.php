@@ -12,7 +12,7 @@
     <x-guest-layout>
     <x-authentication-card>
         <x-slot name="logo">
-            <p style="font-size: 40px"><b>Kayıt Ol</b></p>
+            <p style="font-size: 40px;color: white"><b>Kayıt Ol</b></p>
         </x-slot>
 
         <x-validation-errors class="mb-4" />
