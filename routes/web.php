@@ -6,6 +6,10 @@ Route::get('/', function () {
     return view('pages.mainpage');
 })->name('mainpage');
 
+Route::get('/profile', function () {
+    return view('pages.profilepage');
+})->name('profile');
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
