@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>ARABAM</title>
-    <link rel="icon" type="image/x-icon" href="{{asset("assets/favicon.ico")}}"/>
+    <title>Arabam</title>
+    <link rel="icon" type="image/x-icon" href="{{asset("assets/car-solid.png")}}"/>
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
@@ -26,24 +26,31 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="#page-top">Arabam</a>
+            <a class="navbar-brand" href="#">Arabam</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#projects">İlanlar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">İlanlar</a></li>
                 </ul>
             </div>
             @if (Route::has('login'))
                 <nav class="-mx-3 flex flex-1 justify-end">
                     @auth
                         <a
+                            href="#"
+                            class="rounded-md px-3 py-2 ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                        >
+                            İlan Ekle
+                        </a>
+
+                        <a
                             href="{{ url('/dashboard') }}"
                             class="rounded-md px-3 py-2 ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                         >
-                            Dashboard
+                            Hesabım
                         </a>
                     @else
                         <a
@@ -64,6 +71,7 @@
                     @endauth
                 </nav>
             @endif
+
         </div>
     </nav>
     <!-- Masthead-->
@@ -73,11 +81,12 @@
                 <div class="text-center">
                     <h1 class="mx-auto my-0 text-uppercase">ARABAM</h1>
                     <h2 class="text-white-70 mx-auto mt-2 mb-5">Araba satışında kalitenin bir numaralı adresine hoşgeldiniz.</h2>
-                    <a class="btn btn-primary" href="#about">İlanları İncele</a>
+                    <a class="btn btn-primary" href="#">İlanları İncele</a>
                 </div>
             </div>
         </div>
     </header>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
