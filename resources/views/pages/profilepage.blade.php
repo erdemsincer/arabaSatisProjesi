@@ -29,18 +29,18 @@
     <div class="container-scroller">
         <!-- partial:partials/_sidebar.html -->
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
-            <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-                <h1>Profil</h1>
+            <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top" >
+                <a class="text-white text-decoration-none" href="{{route('mainpage')}}"><h1>Arabam</h1></a>
             </div>
             <ul class="nav">
                 <li class="nav-item nav-category">
-                    <span class="nav-link">Keşfet</span>
+                    <span class="nav-link"><b>Keşfet</b></span>
                 </li>
 
                 <li class="nav-item menu-items">
                     <a class="nav-link" href="{{route('mainpage')}}">
                   <span class="menu-icon">
-                    <i class="mdi mdi-playlist-play"></i>
+                    <i class="mdi mdi-home" style="margin-top: 3px"></i>
                   </span>
                         <span class="menu-title">Ana Sayfa</span>
                     </a>
@@ -49,9 +49,27 @@
                 <li class="nav-item menu-items">
                     <a class="nav-link" href="#">
                   <span class="menu-icon">
-                    <i class="mdi mdi-playlist-play"></i>
+                    <i class="mdi mdi-account" style="margin-top: 3px"></i>
+                  </span>
+                        <span class="menu-title">Profil</span>
+                    </a>
+                </li>
+
+                <li class="nav-item menu-items">
+                    <a class="nav-link" href="#">
+                  <span class="menu-icon">
+                    <i class="mdi mdi-tag" style="margin-top: 3px"></i>
                   </span>
                         <span class="menu-title">İlanlar</span>
+                    </a>
+                </li>
+
+                <li class="nav-item menu-items">
+                    <a class="nav-link" href="#">
+                      <span class="menu-icon align-items-center">
+                        <i class="mdi mdi-plus-circle" style="margin-top: 3px"></i>
+                      </span>
+                        <span class="menu-title">İlan Ekle</span>
                     </a>
                 </li>
             </ul>
@@ -65,13 +83,13 @@
                 </div>
                 <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch" style="background-color: #222632">
 
-                    <ul class="navbar-nav navbar-nav-right w-100 justify-content-end">
-
+                    <ul class="navbar-nav navbar-nav-right w-100 justify-content-between">
+                        <h2 class="mb-0 ml-4">Profil</h2>
                         <li class="nav-item dropdown">
                             <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
                                 <div class="navbar-profile">
                                     <img class="img-xs rounded-circle" src="{{asset('profilepage/assets/images/faces/face15.jpg')}}" alt="">
-                                    <p class="mb-0 d-none d-sm-block navbar-profile-name">Henry Klein</p>
+                                    <p class="mb-0 d-none d-sm-block navbar-profile-name">Ulvi Karabıyık</p>
                                     <i class="mdi mdi-menu-down d-none d-sm-block"></i>
                                 </div>
                             </a>
@@ -114,11 +132,12 @@
                         <div class="col-md-4 grid-margin stretch-card">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="card-title">Kişisel Bilgiler</h4>
-                                    <p class="card-title"><b>Adınız:</b></p>
-                                    <p class="card-title"><b>Soyadınız:</b></p>
-                                    <p class="card-title"><b>E-Posta Adresiniz:</b></p>
-                                    <p class="card-title"><b>Hesabınızın Oluşturulma Tarihi:</b></p>
+                                    <h4 class="card-title"><b>Kişisel Bilgiler</b></h4>
+                                    <p class="card-title">Adınız:</p>
+                                    <p class="card-title">Soyadınız:</p>
+                                    <p class="card-title">E-Posta Adresiniz:</p>
+                                    <p class="card-title">Hesap Türü:</p>
+                                    <p class="card-title">Hesabınızın Oluşturulma Tarihi:</p>
                                 </div>
 
                             </div>
@@ -127,15 +146,15 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="d-flex flex-row justify-content-between">
-                                        <h4 class="card-title mb-1">Siparişler</h4>
-                                        <p class="text-muted mb-1">Sipariş Verildi</p>
+                                        <h4 class="card-title mb-1"><b>Siparişler</b></h4>
+                                        <p class="text-muted mb-1"><b>Sipariş Verildi</b></p>
                                     </div>
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="preview-list">
                                                 <div class="preview-item border-bottom align-items-center">
                                                     <div class="preview-thumbnail" style="width: 100px;height: 80px">
-                                                        <img class="w-100 h-100" src="" alt="">
+                                                        <img class="w-100 h-100 rounded" src="{{asset('profilepage/assets/images/car.jpg')}}" style="object-fit: cover;border: 2px solid #191c24" alt="">
                                                     </div>
                                                     <div class="preview-item-content d-sm-flex flex-grow " >
                                                         <div class="flex-grow">
@@ -159,7 +178,7 @@
                         <div class="col-12 grid-margin">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="card-title">Verdiğiniz İlanlar</h4>
+                                    <h4 class="card-title"><b>Verdiğiniz İlanlar</b></h4>
                                     <div class="table-responsive">
                                         <table class="table">
                                             <thead>
@@ -167,6 +186,7 @@
                                                 <th> Araba </th>
                                                 <th> İlana Çıkış Tarihi </th>
                                                 <th> Fiyatı </th>
+                                                <th> Açıklama </th>
                                                 <th> Durumu </th>
                                             </tr>
                                             </thead>
@@ -179,7 +199,13 @@
                                                 <td> 14.08.2021 </td>
                                                 <td> $14,500 </td>
                                                 <td>
+                                                    Müq araba
+                                                </td>
+                                                <td>
                                                     <div class="badge badge-outline-success">İlanda</div>
+                                                </td>
+                                                <td style="width: 13%" class="p-0">
+                                                    <button type="button" class="btn btn-inverse-info btn-fw mr-2">Düzenle</button>
                                                 </td>
                                                 <td style="width: 13%" class="p-0">
                                                     <button type="button" class="btn btn-inverse-danger btn-fw ">İlandan Kaldır</button>
@@ -197,7 +223,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="d-flex flex-row justify-content-between">
-                                        <h4 class="card-title">Mesajlar</h4>
+                                        <h4 class="card-title"><b>Mesajlar</b></h4>
                                     </div>
                                     <div class="preview-list">
                                         <div class="preview-item border-top">
