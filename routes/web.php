@@ -10,6 +10,10 @@ Route::get('/profile', function () {
     return view('pages.profilepage');
 })->name('profile');
 
+Route::get('/sale', function () {
+    return view('pages.salepage');
+})->name('sale');
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
