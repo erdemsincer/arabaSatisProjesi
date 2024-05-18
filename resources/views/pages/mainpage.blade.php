@@ -40,7 +40,7 @@
                 <nav class="-mx-3 flex flex-1 justify-end">
                     @auth
                         <a
-                            href="#"
+                            href="{{route('sale')}}"
                             class="rounded-md px-3 py-2 ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                         >
                             İlan Ekle
