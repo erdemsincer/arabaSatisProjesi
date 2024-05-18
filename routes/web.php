@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+/* Pages Routes Start */
 Route::get('/', function () {
     return view('pages.mainpage');
 })->name('mainpage');
@@ -13,6 +14,11 @@ Route::get('/profile', function () {
 Route::get('/sale', function () {
     return view('pages.salepage');
 })->name('sale');
+
+Route::get('/advertisement', function () {
+    return view('pages.advertisements');
+})->name('advertisement');
+/* Pages Routes End */
 
 Route::middleware([
     'auth:sanctum',

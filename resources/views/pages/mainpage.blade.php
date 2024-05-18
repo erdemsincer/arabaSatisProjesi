@@ -33,7 +33,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">İlanlar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{route('advertisement')}}">İlanlar</a></li>
                 </ul>
             </div>
             @if (Route::has('login'))
@@ -89,7 +89,7 @@
                 <div class="text-center">
                     <h1 class="mx-auto my-0 text-uppercase">ARABAM</h1>
                     <h2 class="text-white-70 mx-auto mt-2 mb-5">Araba satışında kalitenin bir numaralı adresine hoşgeldiniz.</h2>
-                    <a class="btn btn-primary" href="#">İlanları İncele</a>
+                    <a class="btn btn-primary" href="{{route('advertisement')}}">İlanları İncele</a>
                 </div>
             </div>
         </div>

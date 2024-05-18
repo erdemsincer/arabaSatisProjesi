@@ -56,7 +56,7 @@
                 </li>
 
                 <li class="nav-item menu-items">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="{{route('advertisement')}}">
                       <span class="menu-icon">
                         <i class="mdi mdi-tag" style="margin-top: 3px"></i>
                       </span>
