@@ -1,28 +1,28 @@
 <x-action-section>
     <x-slot name="title">
-        {{ __('Two Factor Authentication') }}
+        <b>{{ __('İki Faktörlü Kimlik Doğrulama') }}</b>
     </x-slot>
 
     <x-slot name="description">
-        {{ __('Add additional security to your account using two factor authentication.') }}
+        {{ __('İki faktörlü kimlik doğrulamayı kullanarak hesabınıza ek güvenlik ekleyin..') }}
     </x-slot>
 
     <x-slot name="content">
-        <h3 class="text-lg font-medium text-gray-900">
+        <h3 class="text-lg font-medium text-white">
             @if ($this->enabled)
                 @if ($showingConfirmation)
-                    {{ __('Finish enabling two factor authentication.') }}
+                    {{ __('İki faktörlü kimlik doğrulamayı etkinleştirmeyi tamamlayın.') }}
                 @else
-                    {{ __('You have enabled two factor authentication.') }}
+                    {{ __('İki faktörlü kimlik doğrulamayı etkinleştirdiniz.') }}
                 @endif
             @else
-                {{ __('You have not enabled two factor authentication.') }}
+                {{ __('İki faktörlü kimlik doğrulamayı etkinleştirmediniz.') }}
             @endif
         </h3>
 
-        <div class="mt-3 max-w-xl text-sm text-gray-600">
+        <div class="mt-3 max-w-xl text-sm text-white">
             <p>
-                {{ __('When two factor authentication is enabled, you will be prompted for a secure, random token during authentication. You may retrieve this token from your phone\'s Google Authenticator application.') }}
+                {{ __('İki faktörlü kimlik doğrulama etkinleştirildiğinde, kimlik doğrulama sırasında sizden güvenli, rastgele bir jeton istenecektir. Bu jetonu telefonunuzun Google Authenticator uygulamasından alabilirsiniz.') }}
             </p>
         </div>
 
@@ -80,7 +80,7 @@
             @if (! $this->enabled)
                 <x-confirms-password wire:then="enableTwoFactorAuthentication">
                     <x-button type="button" wire:loading.attr="disabled">
-                        {{ __('Enable') }}
+                        {{ __('Etkinleştir') }}
                     </x-button>
                 </x-confirms-password>
             @else

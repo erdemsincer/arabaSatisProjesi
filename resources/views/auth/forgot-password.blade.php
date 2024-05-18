@@ -1,7 +1,7 @@
 <x-guest-layout>
     <x-authentication-card>
         <x-slot name="logo">
-            <p style="font-size: 40px"><b>Şifreni Yenile</b></p>
+            <p style="font-size: 40px; color:white"><b>Şifreni Yenile</b></p>
         </x-slot>
 
         @session('status')

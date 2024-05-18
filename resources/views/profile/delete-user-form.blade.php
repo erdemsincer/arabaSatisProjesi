@@ -1,20 +1,20 @@
 <x-action-section>
     <x-slot name="title">
-        {{ __('Delete Account') }}
+        <b>{{ __('Hesabı Sil') }}</b>
     </x-slot>
 
     <x-slot name="description">
-        {{ __('Permanently delete your account.') }}
+        {{ __('Hesabınızı kalıcı olarak silin.') }}
     </x-slot>
 
     <x-slot name="content">
-        <div class="max-w-xl text-sm text-gray-600">
-            {{ __('Once your account is deleted, all of its resources and data will be permanently deleted. Before deleting your account, please download any data or information that you wish to retain.') }}
+        <div class="max-w-xl text-sm text-white">
+            {{ __('Hesabınız silindiğinde, tüm kaynakları ve verileri kalıcı olarak silinecektir. Hesabınızı silmeden önce, lütfen saklamak istediğiniz veri veya bilgileri indirin.') }}
         </div>
 
         <div class="mt-5">
             <x-danger-button wire:click="confirmUserDeletion" wire:loading.attr="disabled">
-                {{ __('Delete Account') }}
+                {{ __('Hesabı Sil') }}
             </x-danger-button>
         </div>
 

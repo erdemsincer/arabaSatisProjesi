@@ -1,15 +1,15 @@
 <x-action-section>
     <x-slot name="title">
-        {{ __('Browser Sessions') }}
+        <b>{{ __('Oturumlar') }}</b>
     </x-slot>
 
     <x-slot name="description">
-        {{ __('Manage and log out your active sessions on other browsers and devices.') }}
+        {{ __('Diğer tarayıcılar ve cihazlardaki aktif oturumlarınızı yönetin ve oturumunuzu kapatın.') }}
     </x-slot>
 
     <x-slot name="content">
-        <div class="max-w-xl text-sm text-gray-600">
-            {{ __('If necessary, you may log out of all of your other browser sessions across all of your devices. Some of your recent sessions are listed below; however, this list may not be exhaustive. If you feel your account has been compromised, you should also update your password.') }}
+        <div class="max-w-xl text-sm text-white">
+            {{ __('Gerekirse tüm cihazlarınızdaki diğer tüm oturumlardan çıkış yapabilirsiniz. Son oturumlarınızdan bazıları aşağıda listelenmiştir; ancak bu liste kapsamlı olmayabilir. Hesabınızın ele geçirildiğini düşünüyorsanız şifrenizi güncellemelisiniz.') }}
         </div>
 
         @if (count($this->sessions) > 0)
@@ -30,16 +30,16 @@
                         </div>
 
                         <div class="ms-3">
-                            <div class="text-sm text-gray-600">
+                            <div class="text-sm text-white">
                                 {{ $session->agent->platform() ? $session->agent->platform() : __('Unknown') }} - {{ $session->agent->browser() ? $session->agent->browser() : __('Unknown') }}
                             </div>
 
                             <div>
-                                <div class="text-xs text-gray-500">
+                                <div class="text-xs text-white">
                                     {{ $session->ip_address }},
 
                                     @if ($session->is_current_device)
-                                        <span class="text-green-500 font-semibold">{{ __('This device') }}</span>
+                                        <span class="text-green-500 font-semibold">{{ __('Bu aygıt') }}</span>
                                     @else
                                         {{ __('Last active') }} {{ $session->last_active }}
                                     @endif
@@ -53,7 +53,7 @@
 
         <div class="flex items-center mt-5">
             <x-button wire:click="confirmLogout" wire:loading.attr="disabled">
-                {{ __('Log Out Other Browser Sessions') }}
+                {{ __('Diğer Oturumlardan Çıkış Yapın') }}
             </x-button>
 
             <x-action-message class="ms-3" on="loggedOut">

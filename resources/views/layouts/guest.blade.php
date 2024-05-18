@@ -15,6 +15,11 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
         <!-- Styles -->
+        <style>
+            label{
+                color: black !important;
+            }
+        </style>
         @livewireStyles
     </head>
     <body>
