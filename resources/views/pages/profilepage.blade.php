@@ -11,12 +11,12 @@
             <div class="col-md-4 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title"><b>Kişisel Bilgiler</b></h4>
-                        <p class="card-title">Adınız:</p>
-                        <p class="card-title">Soyadınız:</p>
-                        <p class="card-title">E-Posta Adresiniz:</p>
-                        <p class="card-title">Hesap Türü:</p>
-                        <p class="card-title">Hesabınızın Oluşturulma Tarihi:</p>
+                        <h3 class="card-title">Kişisel Bilgiler</h3>
+                        <p class="card-title"><b>Adınız:</b></p>
+                        <p class="card-title"><b>Soyadınız:</b></p>
+                        <p class="card-title"><b>E-Posta Adresiniz:</b></p>
+                        <p class="card-title"><b>Hesap Türü:</b></p>
+                        <p class="card-title"><b>Hesabınızın Oluşturulma Tarihi:</b></p>
                     </div>
 
                 </div>
@@ -25,7 +25,7 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="d-flex flex-row justify-content-between">
-                            <h4 class="card-title mb-1"><b>Siparişler</b></h4>
+                            <h3 class="card-title mb-1">Siparişler</h3>
                             <p class="text-muted mb-1"><b>Sipariş Verildi</b></p>
                         </div>
                         <div class="row">
@@ -57,7 +57,7 @@
             <div class="col-12 grid-margin">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title"><b>Verdiğiniz İlanlar</b></h4>
+                        <h3 class="card-title">Verdiğiniz İlanlar</h3>
                         <div class="table-responsive">
                             <table class="table">
                                 <thead>
@@ -102,7 +102,7 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="d-flex flex-row justify-content-between">
-                            <h4 class="card-title"><b>Mesajlar</b></h4>
+                            <h3 class="card-title">Mesajlar</h3>
                         </div>
                         <div class="preview-list">
                             <div class="preview-item border-top">
