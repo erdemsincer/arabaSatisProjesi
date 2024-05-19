@@ -6,10 +6,23 @@
     İlan Ekle
 @endsection
 @section('content')
+    <style>
+        select,input,textarea {
+            color: rgba(255, 255, 255, 0.87) !important;
+        }
+
+        ::-webkit-calendar-picker-indicator {
+            filter: invert(1);
+        }
+
+    </style>
+
+
+
     <div class="px-4 pt-4">
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title">Araba İlanı Oluştur</h4>
+                <h4 class="card-title">İlan Oluştur</h4>
                 <form class="forms-sample">
                     <div class="container p-0">
                         <div class="row">
@@ -37,7 +50,8 @@
                             <div class="col">
                                 <div class="form-group">
                                     <label for="exampleSelectGender">İl</label>
-                                    <select class="form-control" id="exampleSelectGender">
+                                    <select class="form-control mySelect" id="exampleSelectGender">
+                                        <option value="" selected disabled>Lütfen bir il seçiniz</option>
                                         <option>Elazığ</option>
                                     </select>
                                 </div>
@@ -46,6 +60,7 @@
                                 <div class="form-group">
                                     <label for="exampleSelectGender">İlçe</label>
                                     <select class="form-control" id="exampleSelectGender">
+                                        <option selected disabled>Lütfen bir ilçe seçiniz</option>
                                         <option>Palu</option>
                                     </select>
                                 </div>
@@ -142,5 +157,7 @@
             </div>
         </div>
     </div>
+
+
 
 @endsection
