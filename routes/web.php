@@ -18,6 +18,10 @@ Route::get('/sale', function () {
 Route::get('/advertisement', function () {
     return view('pages.advertisements');
 })->name('advertisement');
+
+Route::get('/detail', function () {
+    return view('pages.addetailpage');
+})->name('detail');
 /* Pages Routes End */
 
 Route::middleware([

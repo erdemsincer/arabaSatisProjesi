@@ -42,7 +42,7 @@
                                             </div>
                                             <div class="mr-auto text-sm-right pt-2 pt-sm-0">
                                                 <p class="text-muted">15 dakika önce</p>
-                                                <button type="button" class="btn btn-inverse-danger btn-fw">İptal Et</button>
+                                                <button type="button" class="btn btn-inverse-danger btn-fw btn-rounded" style="font-size: 16px;min-width: 130px;min-height: 40px">İptal Et</button>
                                             </div>
                                         </div>
                                     </div>
@@ -84,10 +84,10 @@
                                         <div class="badge badge-outline-success">İlanda</div>
                                     </td>
                                     <td style="width: 13%" class="p-0">
-                                        <button type="button" class="btn btn-inverse-info btn-fw mr-2">Düzenle</button>
+                                        <button type="button" class="btn btn-inverse-info btn-fw btn-rounded mr-2" style="font-size: 16px;min-width: 130px;min-height: 40px">Düzenle</button>
                                     </td>
                                     <td style="width: 13%" class="p-0">
-                                        <button type="button" class="btn btn-inverse-danger btn-fw ">İlandan Kaldır</button>
+                                        <button type="button" class="btn btn-inverse-danger btn-fw btn-rounded" style="font-size: 16px;min-width: 130px;min-height: 40px">İlandan Kaldır</button>
                                     </td>
                                 </tr>
                                 </tbody>
@@ -117,7 +117,7 @@
                                         </div>
                                         <div class="d-flex flex-row justify-content-between">
                                             <p class="text-muted">El arabası var mı kardeşim?</p>
-                                            <button type="button" class="btn btn-inverse-success btn-fw">Cevapla</button>
+                                            <button type="button" class="btn btn-inverse-success btn-fw btn-rounded" style="font-size: 16px;min-width: 130px;min-height: 40px">Cevapla</button>
                                         </div>
 
                                     </div>

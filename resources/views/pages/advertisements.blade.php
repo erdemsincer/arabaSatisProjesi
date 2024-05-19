@@ -11,7 +11,7 @@
             <div class="col-4">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title">Chevrolet Camaro</h4>
+                        <h4 class="card-title"><b>Chevrolet Camaro</b></h4>
                         <div class="owl-carousel owl-theme full-width owl-carousel-dash portfolio-carousel owl-loaded owl-drag" id="owl-carousel-basic">
 
                             <div class="owl-stage-outer">
@@ -52,7 +52,7 @@
                                     <div class="preview-item-content d-flex flex-grow">
                                         <div class="flex-grow">
                                             <div class="d-flex d-md-block d-xl-flex justify-content-between">
-                                                <h6 class="preview-subject">Enes Batur</h6>
+                                                <h6 class="preview-subject"><b>Enes Batur</b></h6>
                                                 <p class="text-muted text-small">4 Saat Önce</p>
                                             </div>
                                             <p class="text-muted">Kötü bir kaza geçirdim, her arabaya bindiğimde kaza aklıma geliyor, o yüzden satıyorum.</p>
@@ -81,10 +81,10 @@
                             </div>
                             <div class="row">
                                 <div class="col p-0">
-                                    <button type="button" class="btn btn-info btn-fw float-right mr-3" style="min-width: 130px;min-height: 40px;">Detayları İncele</button>
+                                    <a href="{{route('detail')}}" class="btn btn-info btn-fw btn-rounded float-right mr-3 d-flex align-items-center justify-content-center" style="min-width: 130px;min-height: 40px;">Detayları İncele</a>
                                 </div>
                                 <div class="col p-0 pt-3 pt-xl-0">
-                                    <button type="button" class="btn btn-success btn-fw float-left ml-3" style="min-width: 130px;min-height: 40px;">Sipariş Et</button>
+                                    <a class="btn btn-success btn-fw btn-rounded float-left ml-3 d-flex align-items-center justify-content-center" style="min-width: 130px;min-height: 40px;">Sipariş Et</a>
                                 </div>
                             </div>
                         </div>

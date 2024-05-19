@@ -150,8 +150,8 @@
                             </div>
                         </div>
 
-                        <button type="submit" class="btn btn-primary mr-2">Oluştur</button>
-                        <button class="btn btn-dark">İptal</button>
+                        <button type="submit" class="btn btn-primary btn-rounded mr-2" style="font-size: 16px;min-width: 130px;min-height: 40px">Oluştur</button>
+                        <button class="btn btn-dark btn-rounded" style="font-size: 16px;min-width: 130px;min-height: 40px">İptal</button>
                     </div>
                 </form>
             </div>
