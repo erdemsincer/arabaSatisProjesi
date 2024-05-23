@@ -23,25 +23,26 @@
         <div class="card">
             <div class="card-body">
                 <h4 class="card-title">İlan Oluştur</h4>
-                <form class="forms-sample">
+                <form class="forms-sample" action="{{route('add')}}" method="post">
+                    @csrf
                     <div class="container p-0">
                         <div class="row">
                             <div class="col">
                                 <div class="form-group">
                                     <label for="exampleInputName1">Marka</label>
-                                    <input type="text" class="form-control" id="exampleInputName1" placeholder="Marka giriniz">
+                                    <input name="marka" type="text" class="form-control" id="exampleInputName1" placeholder="Marka giriniz">
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="form-group">
                                     <label for="exampleInputName1">Model</label>
-                                    <input type="text" class="form-control" id="exampleInputName1" placeholder="Model giriniz">
+                                    <input name="model" type="text" class="form-control" id="exampleInputName1" placeholder="Model giriniz">
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="form-group">
                                     <label for="exampleInputName1">Hasar Kaydı</label>
-                                    <input type="date" class="form-control" id="exampleInputName1" placeholder="Hasar kaydı giriniz">
+                                    <input name="hasar" type="date" class="form-control" id="exampleInputName1" placeholder="Hasar kaydı giriniz">
                                 </div>
                             </div>
                         </div>
@@ -50,7 +51,7 @@
                             <div class="col">
                                 <div class="form-group">
                                     <label for="exampleSelectGender">İl</label>
-                                    <select class="form-control mySelect" id="exampleSelectGender">
+                                    <select name="il" class="form-control mySelect" id="exampleSelectGender">
                                         <option value="" selected disabled>Lütfen bir il seçiniz</option>
                                         <option>Elazığ</option>
                                     </select>
@@ -59,7 +60,7 @@
                             <div class="col">
                                 <div class="form-group">
                                     <label for="exampleSelectGender">İlçe</label>
-                                    <select class="form-control" id="exampleSelectGender">
+                                    <select name="ilce" class="form-control" id="exampleSelectGender">
                                         <option selected disabled>Lütfen bir ilçe seçiniz</option>
                                         <option>Palu</option>
                                     </select>
@@ -68,7 +69,7 @@
                             <div class="col">
                                 <div class="form-group">
                                     <label for="exampleInputEmail3">Arabanın Yılı</label>
-                                    <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Bir yıl giriniz">
+                                    <input name="yıl" type="text" class="form-control" id="exampleInputEmail3" placeholder="Bir yıl giriniz">
                                 </div>
 
                             </div>
@@ -78,13 +79,13 @@
                             <div class="col">
                                 <div class="d-flex form-group flex-column">
                                     <label for="exampleInputEmail3">Renk</label>
-                                    <input type="color" class="form-control w-50 mx-auto" style="height: 110px" id="exampleInputEmail3" placeholder="Renk">
+                                    <input name="renk" type="color" class="form-control w-50 mx-auto" style="height: 110px" id="exampleInputEmail3" placeholder="Renk">
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="form-group">
                                     <label for="exampleInputEmail3">Km</label>
-                                    <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Km giriniz">
+                                    <input name="km" type="text" class="form-control" id="exampleInputEmail3" placeholder="Km giriniz">
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleSelectGender">Garanti</label>
@@ -107,7 +108,7 @@
 
                                 <div class="form-group">
                                     <label for="exampleSelectGender">Yakıt</label>
-                                    <select class="form-control" id="exampleSelectGender">
+                                    <select name="yakit" class="form-control" id="exampleSelectGender">
                                         <option selected disabled>Lütfen bir yakıt seçiniz.</option>
                                         <option value="0">Dizel</option>
                                         <option value="1">Benzin</option>
@@ -127,7 +128,7 @@
                                 <div class="form-group">
                                     <label for="exampleSelectGender">Durum</label>
                                     <select class="form-control" id="exampleSelectGender">
-                                        <option selected disabled>Lütfen bir durum seçiniz.</option>
+                                        <option name="durum" selected disabled>Lütfen bir durum seçiniz.</option>
                                         <option value="0">Pasif</option>
                                         <option value="1">İlanda</option>
                                     </select>
@@ -136,7 +137,7 @@
                             <div class="col">
                                 <div class="form-group">
                                     <label for="exampleInputPassword4">Fiyat</label>
-                                    <input type="text" class="form-control" id="exampleInputPassword4" placeholder="Fiyat giriniz">
+                                    <input name="fiyat" type="text" class="form-control" id="exampleInputPassword4" placeholder="Fiyat giriniz">
                                 </div>
                             </div>
                         </div>
@@ -145,7 +146,7 @@
                             <div class="col">
                                 <div class="form-group">
                                     <label for="exampleTextarea1">Açıklama</label>
-                                    <textarea class="form-control" id="exampleTextarea1" rows="10"></textarea>
+                                    <textarea name="aciklama"  class="form-control" id="exampleTextarea1" rows="10"></textarea>
                                 </div>
                             </div>
                         </div>
