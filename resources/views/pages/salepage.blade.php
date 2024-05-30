@@ -1,9 +1,15 @@
-@extends('layouts.navigation')
+@extends('layouts.app-layout')
 @section('title')
     İlan Ekle
 @endsection
 @section('pageHeader')
     İlan Ekle
+@endsection
+@section('navbar')
+    @include('layouts.navigation')
+@endsection
+@section('sidebar')
+    @include('layouts.sidebar')
 @endsection
 @section('content')
     <style>

@@ -1,12 +1,21 @@
-@extends('layouts.navigation')
+@extends('layouts.app-layout')
 @section('title')
     İlanlar
 @endsection
 @section('pageHeader')
     İlanlar
 @endsection
+@section('navbar')
+    <style>
+        .navbar{
+            left: 0px;
+        }
+    </style>
+    @include('layouts.navigation')
+
+@endsection
 @section('content')
-    <div class="container mt-5">
+    <div class="container mt-5 ml-0 ">
         <div class="row">
             <div class="col-4">
                 <div class="card">

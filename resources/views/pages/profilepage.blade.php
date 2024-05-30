@@ -1,9 +1,15 @@
-@extends('layouts.navigation')
+@extends('layouts.app-layout')
 @section('title')
     Profil
 @endsection
 @section('pageHeader')
     Profil
+@endsection
+@section('navbar')
+    @include('layouts.navigation')
+@endsection
+@section('sidebar')
+    @include('layouts.sidebar')
 @endsection
 @section('content')
     <div class="content-wrapper">

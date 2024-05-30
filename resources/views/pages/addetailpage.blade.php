@@ -1,9 +1,15 @@
-@extends('layouts.navigation')
+@extends('layouts.app-layout')
 @section('title')
     İlan Detayı
 @endsection
 @section('pageHeader')
     İlan Detayı
+@endsection
+@section('navbar')
+    @include('layouts.navigation')
+@endsection
+@section('sidebar')
+    @include('layouts.sidebar')
 @endsection
 @section('content')
     <style>
