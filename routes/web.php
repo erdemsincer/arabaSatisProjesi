@@ -18,7 +18,10 @@ Route::get('/profile', function () {
 Route::get('/sale',[adsController::class,'create'])->name('sale');
 Route::post('/add',[adsController::class,'postAds'])->name('add');
 
-
+//admin
+Route::get('/admin', function () {
+    return view('pages.admin');
+})->name('admin');
 
 Route::get('advertisement',[adsController::class,'index'])->name('advertisement');
 
