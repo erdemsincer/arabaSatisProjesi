@@ -5,15 +5,28 @@
 @section('pageHeader')
     İlanlar
 @endsection
+@section('brand')
+    <li><a href="{{route('mainpage')}}"><h1 class="ml-4 mb-0">Arabam</h1></a></li>
+@endsection
+@section('links')
+    <div class="d-flex flex-row align-items-center mr-4">
+        <a href="{{route('sale')}}"><h4 class="d-flex mt-1 mr-4 mb-0">İlan Ekle</h4></a>
+        <a href="{{route('profile')}}"><h4 class="d-flex mt-1 mb-0">Profil</h4></a>
+    </div>
+@endsection
 @section('navbar')
     <style>
         .navbar{
             left: 0px;
         }
+        a>h4{
+            font-size: 20px
+        }
     </style>
     @include('layouts.navigation')
 
 @endsection
+
 @section('content')
     <div class="container mt-5 ml-0 ">
         <div class="row">

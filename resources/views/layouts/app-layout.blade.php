@@ -24,6 +24,13 @@
     <link rel="stylesheet" href="{{asset('coronatemplate/assets/css/style.css')}}">
     <!-- End layout styles -->
     <link rel="shortcut icon" href="{{asset('coronatemplate/assets/images/favicon.png')}}" />
+
+    <style>
+        a,a:hover{
+            color: white;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body style="font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji">
     <div class="container-scroller">

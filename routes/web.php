@@ -32,10 +32,6 @@ Route::get('/detail', function () {
 /* Pages Routes End */
 
 
-
-// ilan
-
-
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
