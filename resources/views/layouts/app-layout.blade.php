@@ -35,23 +35,25 @@
 <body style="font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji">
     <div class="container-scroller">
         @yield('sidebar')
-        <div class="container-fluid page-body-wrapper">
+        <div class="container-fluid page-body-wrapper d-flex flex-column">
             @yield('navbar')
             <div class="main-panel">
                 @yield('content')
                 <!-- partial:partials/_footer.html -->
-                <footer class="footer">
-                    <div class="d-sm-flex justify-content-center justify-content-sm-between">
-                        <p class="mb-0 ml-auto mr-3">Code23 GOATS tarafından yapıldı</p>
-                    </div>
-                </footer>
-                <!-- partial -->
             </div>
             <!-- main-panel ends -->
+            <!-- partial -->
+            <footer class="footer">
+                <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                    <p class="mb-0 ml-auto mr-3">Code23 GOATS tarafından yapıldı</p>
+                </div>
+            </footer>
         </div>
+
         <!-- page-body-wrapper ends -->
     </div>
     <!-- container-scroller -->
+
     <!-- plugins:js -->
     <script src="{{asset('coronatemplate/assets/vendors/js/vendor.bundle.base.js')}}"></script>
     <!-- endinject -->

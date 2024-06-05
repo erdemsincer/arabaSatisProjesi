@@ -6,7 +6,7 @@
     İlanlar
 @endsection
 @section('brand')
-    <li><a href="{{route('mainpage')}}"><h1 class="ml-4 mb-0">Arabam</h1></a></li>
+    <li><a href="{{route('mainpage')}}"><h1 class="ml-5 mb-0">Arabam</h1></a></li>
 @endsection
 @section('links')
     <div class="d-flex flex-row align-items-center mr-4">
