@@ -3,7 +3,7 @@
     İlanlar
 @endsection
 @section('pageHeader')
-    İlanlar
+    <h2 class="mb-0" style="margin-left: 90px">İlanlar</h2>
 @endsection
 @section('brand')
     <li><a href="{{route('mainpage')}}"><h1 class="ml-5 mb-0">Arabam</h1></a></li>

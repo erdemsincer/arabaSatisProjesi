@@ -1,13 +1,10 @@
 <!-- partial:partials/_navbar.html -->
 <nav class="navbar p-0 fixed-top d-flex flex-row">
-    <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
-        <a class="text-white navbar-brand brand-logo-mini p-0 " href="{{route('mainpage')}}"><h1 class="mb-0 text-center">A</h1></a>
-    </div>
     <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch" style="background-color: #222632">
 
         <ul class="navbar-nav navbar-nav-right w-100 justify-content-between">
             @yield('brand')
-            <li><h2 class="mb-0 ml-4">@yield('pageHeader')</h2></li>
+            <li>@yield('pageHeader')</li>
             <li class="nav-item dropdown">
                 <div class="d-flex flex-row">
                     @yield('links')
